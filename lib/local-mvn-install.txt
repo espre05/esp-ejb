@@ -1,0 +1,20 @@
+mvn install:install-file -Dpackaging=jar -Dfile=ejbRemotePortable.jar -DgroupId=ibm -DartifactId=ejb2-remoteClient -Dversion=8.5.5.9
+
+
+
+mvn install:install-file -Dpackaging=jar -Dfile=com.ibm.ws.ejb.thinclient_9.0.jar -DgroupId=ibm -DartifactId=ejb-client -Dversion=9.0
+
+
+mvn install:install-file -Dpackaging=jar -Dfile=com.ibm.ws.orb_9.0.jar -DgroupId=ibm -DartifactId=orb -Dversion=9.0 
+
+
+		<dependency>
+			<groupId>ibm</groupId>
+			<artifactId>ejb-client</artifactId>
+			<version>9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ibm</groupId>
+			<artifactId>orb</artifactId>
+			<version>9.0</version>
+		</dependency>
